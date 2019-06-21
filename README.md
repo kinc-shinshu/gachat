@@ -24,3 +24,8 @@ make stop
 # cleaning container, real data
 make clean
 ```
+
+## References
+
+- [graphql-ruby Tutorial](https://www.howtographql.com/graphql-ruby/0-introduction/)
+- [GraphQL gem](https://graphql-ruby.org/)
