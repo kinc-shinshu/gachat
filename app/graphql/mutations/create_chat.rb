@@ -8,6 +8,8 @@ module Mutations
 
     def resolve(body: nil, name: nil)
       Chat.create!(body: body, name: name)
+    rescue ActiveRecord::RecordInvalid => e
+      GraphQL::ExecutionError.new("Invalid input: #{e.record.errors.full_messages.join('; ')}")
     end
   end
 end
