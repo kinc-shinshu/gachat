@@ -3,6 +3,7 @@ postgres:
 
 database:
 	bundle exec rails db:create
+	bundle exec rails db:migration
 
 stop:
 	docker stop pg
